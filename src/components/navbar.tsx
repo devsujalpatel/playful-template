@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowRightIcon } from "lucide-react";
+import { GreenBtn } from "./green-btn";
 
 const navlinks = [
     {
@@ -38,7 +39,7 @@ export const Navbar = () => {
           </Link>
         ))}
       </nav>
-      <button className="border border-green-700 justify-center gap-2 h-10 text-white rounded-lg py-2 px-4.5 cursor-pointer shadow-md text-base flex items-center font-semibold bg-linear-to-b from-emerald-500 to-[#25a18e]">Get started <ArrowRightIcon className="size-4" /></button>
+      <GreenBtn className="gap-2 h-10 rounded-lg2">Get started <ArrowRightIcon className="size-4" /></GreenBtn>
     </header>
   );
 };
