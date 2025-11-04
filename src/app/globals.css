@@ -41,6 +41,8 @@
   --radius-lg: var(--radius);
   --radius-lg2: calc(var(--radius) + 2px);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-ace: 0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);
 }
 
 :root {
@@ -120,3 +122,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+html::-webkit-scrollbar {
+  width: 5px; /* width of the vertical scrollbar */
+  background-color: #ffffff; /* color of the track area, though often covered */
+}
+
+html::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Target the thumb (draggable handle) */
+html::-webkit-scrollbar-thumb {
+  background-color: #828181; /* color of the scroll thumb */
+  border-radius: 5px;
+}
+
+/* Add a hover effect for the thumb */
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+

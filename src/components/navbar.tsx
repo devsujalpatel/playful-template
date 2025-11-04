@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowRightIcon } from "lucide-react";
 import { GreenBtn } from "./green-btn";
+import { Logo } from "./logo";
 
 const navlinks = [
     {
@@ -25,9 +26,9 @@ const navlinks = [
 export const Navbar = () => {
     const path = usePathname();
   return (
-    <header className="flex justify-between py-7 mx-auto max-w-375">
+    <header className="flex justify-between py-4 mt-4 mx-auto max-w-375">
       <Link href="/" className="flex justify-between gap-3.5">
-        <Image src="/logo.svg" alt="logo" width={38} height={38} />
+       <Logo />
         <h2 className="text-3xl font-semibold text-neutral-800 tracking-tight font-inter">
           Playful
         </h2>
