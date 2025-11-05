@@ -27,11 +27,13 @@ export const InterviewCard = ({ className }: { className?: string }) => {
                   width={50}
                   height={50}
                   alt="avatar"
+                  loading="lazy"
                 />
                 <Image
                   className="absolute bottom-0 right-0"
                   src="/assets/images/avatar-badge.png"
                   width={20}
+                  loading="lazy"
                   height={20}
                   alt="avatar badge"
                 />
