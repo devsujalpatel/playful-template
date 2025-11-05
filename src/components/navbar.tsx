@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowRightIcon } from "lucide-react";
 import { GreenBtn } from "./green-btn";
-import { Logo } from "./logo";
+import { Logo } from "./svgs/logo";
 
 const navlinks = [
     {

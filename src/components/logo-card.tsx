@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "./logo";
+import { Logo } from "./svgs/logo";
 import { cn } from "@/lib/utils";
 
 export const LogoCard = ({ className }: { className?: string }) => {
