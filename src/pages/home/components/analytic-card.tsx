@@ -8,7 +8,7 @@ export const AnalyticCard = ({ className }: { className?: string }) => {
         className
       )}
     >
-      <h3 className="bg-slate-200 text-xs px-3 py-2 text-neutral-700">
+      <h3 className="bg-slate-200 text-xs px-3 py-2 text-slate-800 tracking-wide ">
         Analytics
       </h3>
 
@@ -16,7 +16,7 @@ export const AnalyticCard = ({ className }: { className?: string }) => {
       <div className="flex flex-col px-3 py-2 gap-2">
         {meetings.map((item, idx) => (
           <div key={idx} className="flex flex-col">
-            <p className="text-[15px] text-neutral-700 leading-5">{item.title}</p>
+            <p className="text-sm text-neutral-900 leading-5">{item.title}</p>
             <label className="text-[11px] text-neutral-600">{item.label}</label>
           </div>
         ))}

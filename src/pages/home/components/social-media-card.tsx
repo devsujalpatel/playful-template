@@ -6,7 +6,7 @@ export const SocialCard = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        "-bottom-41 -left-18 absolute rotate-24 shrink-0 scale-90 overflow-hidden",
+        "-bottom-50 -left-18 absolute rotate-24 shrink-0 scale-90 overflow-hidden",
         className
       )}
     >

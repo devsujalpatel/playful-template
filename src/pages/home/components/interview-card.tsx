@@ -15,32 +15,36 @@ export const InterviewCard = ({ className }: { className?: string }) => {
           alt="paper clip"
         />
 
-        <div className="absolute flex flex-col top-18 left-20 gap-2">
+        <div className="absolute flex flex-col top-25 left-13 gap-4">
           {interviews.map((item, idx) => (
-            <div key={idx} className="flex bg-white p-4">
+            <div
+              key={idx}
+              className="flex bg-white px-4 py-3 rounded-xl justify-between items-center w-75 shadow"
+            >
               <div className="relative">
                 <Image
                   src="/assets/images/avatar.png"
-                  width={40}
-                  height={40}
+                  width={50}
+                  height={50}
                   alt="avatar"
                 />
                 <Image
+                  className="absolute bottom-0 right-0"
                   src="/assets/images/avatar-badge.png"
                   width={20}
                   height={20}
                   alt="avatar badge"
                 />
               </div>
-              <div>
-                <p className="text-[15px] text-neutral-700 leading-5">
+              <div className="flex flex-col gap-2 justify-center mt-3">
+                <p className="text-md text-neutral-950 tracking-wide leading-1">
                   {item.title}
                 </p>
-                <label className="text-[11px] text-neutral-600">
+                <label className="text-[13px] text-neutral-900">
                   {item.label}
                 </label>
               </div>
-              <EllipsisVerticalIcon />
+              <EllipsisVerticalIcon className="size-5 ml-6" />
             </div>
           ))}
         </div>

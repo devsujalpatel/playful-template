@@ -29,7 +29,7 @@ export const HeroSection = () => {
       </GreenBtn>
 
       <AnalyticCard className="bottom-45 -left-2 rotate-16" />
-      {/* <AnalyticCard className="bottom-12 right-50 -rotate-16" /> */}
+      <AnalyticCard className="-bottom-23 right-69 scale-115 -rotate-18" />
       <SocialCard />
 
       <InterviewCard />
