@@ -1,6 +1,8 @@
+import { LogoCard } from "@/components/logo-card";
 import { Cloud } from "@/components/svgs/cloud";
 import { SpeedMeter } from "@/components/svgs/speed-meter";
 import { UserSearch } from "@/components/svgs/user-search";
+import Image from "next/image";
 
 export const FeatureSection = () => {
   return (
@@ -27,6 +29,16 @@ export const FeatureSection = () => {
             </p>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center relative items-center mt-28 w-[93%] bg-linear-to-b from-brand p-24 rounded-4xl">
+        <Image
+          src="/assets/images/landing.webp"
+          alt="landing"
+          width={1500}
+          height={1000}
+        />
+        <LogoCard className="md:-left-10 top-0 md:top-24 rotate-[-15.11deg]" />
+        <LogoCard className="md:-right-5 bottom-20 md:top-120 rotate-[15.11deg]" />
       </div>
     </div>
   );
