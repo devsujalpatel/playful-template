@@ -8,14 +8,14 @@ export const Disc = () => {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#00BC7D"
+      stroke="#007A55"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
       className="lucide lucide-disc-icon lucide-disc"
     >
       <circle cx="12" cy="12" r="10" />
-      <circle cx="12" cy="12" fill="#00BC7D" r="4" />
+      <circle cx="12" cy="12" fill="#007A55" r="4" />
     </svg>
   );
 };

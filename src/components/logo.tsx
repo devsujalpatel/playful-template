@@ -1,6 +1,7 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
-export const Logo = () => {
+export const Logo = ({ className }: { className?: string }) => {
   return (
     <svg
       width="39"
@@ -8,7 +9,7 @@ export const Logo = () => {
       viewBox="0 0 39 51"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="shrink-0"
+      className={cn("shrink-0", className)}
     >
       <g filter="url(#filter0_di_309_821)">
         <path
