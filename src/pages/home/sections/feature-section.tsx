@@ -9,7 +9,7 @@ import { SectionPara } from "../components/section-paragraph";
 
 export const FeatureSection = () => {
   return (
-    <div className="flex flex-col justify-between items-center my-25">
+    <div className="flex flex-col justify-between items-center my-2">
       <div className="flex flex-col items-center space-y-4">
         <HeaderButton>Features</HeaderButton>
         <SectionHeading>Go from question to hired</SectionHeading>
