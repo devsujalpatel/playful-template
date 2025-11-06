@@ -5,7 +5,7 @@ import { ProductSection } from "./sections/product-section";
 
 export const HomePage = () => {
   return (
-    <Container>
+    <Container className="bg-neutral-50">
       <HeroSection />
       <FeatureSection />
       <ProductSection />

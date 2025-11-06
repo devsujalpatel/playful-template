@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
 export const Container = ({
@@ -7,5 +8,5 @@ export const Container = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  return <main className="max-w-375 mx-auto h-full">{children}</main>;
+  return <main className={cn("max-w-375 mx-auto h-full", className)}>{children}</main>;
 };

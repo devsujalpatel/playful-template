@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={` ${inter.variable} antialiased font-inter`}
+        className={` ${inter.variable} antialiased font-inter bg-neutral-50`}
       >
         <ThemeProvider>
         <Navbar />
