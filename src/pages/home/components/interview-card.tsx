@@ -18,7 +18,7 @@ export const InterviewCard = ({ className }: { className?: string }) => {
 
         <div className="absolute flex flex-col top-25 left-13 gap-4">
           {interviews.map((item, idx) => (
-            <InterviewDetails key={idx} {...item} />
+            <InterviewDetails key={idx} {...item} className="shadow" />
           ))}
         </div>
       </div>

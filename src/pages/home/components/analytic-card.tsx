@@ -8,7 +8,7 @@ export const AnalyticCard = ({ className }: { className?: string }) => {
         className
       )}
     >
-      <h3 className="bg-slate-200 text-xs px-3 py-2 text-slate-800 tracking-wide ">
+      <h3 className="bg-[#DFEBF3] text-xs px-3 py-2 text-slate-800 tracking-wide ">
         Analytics
       </h3>
 

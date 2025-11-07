@@ -1,12 +1,11 @@
-import Image from "next/image";
 import { HeaderButton } from "../components/header-button";
 import { SectionHeading } from "../components/section-heading";
 import { SectionPara } from "../components/section-paragraph";
-import { EllipsisIcon } from "lucide-react";
 import { BentoPara } from "../components/bento-para";
 import { BentoHeading } from "../components/bento-heading";
 import { DriveCard } from "../components/drive-card";
 import { InterviewDetails } from "../components/interview-details";
+import { AnalyticCard } from "../components/analytic-card";
 
 export const ProductSection = () => {
   return (
@@ -33,23 +32,25 @@ export const ProductSection = () => {
               </BentoPara>
             </div>
           </div>
-          <div className="rounded-3xl shadow-ace w-3/5 h-[483px] flex items-center justify-center flex-col">
-            <div className="flex flex-col gap-4 ">
+          <div className="rounded-3xl relative overflow-hidden border w-3/5 h-[483px] flex items-center justify-center flex-col">
+            <div className="flex flex-col gap-2  z-10">
               {interviews.map((item, idx) => (
                 <InterviewDetails
                   key={idx}
                   {...item}
-                  className="w-120 border border-[#DBDCDF]"
+                  className="w-100 border border-[#DBDCDF]"
                 />
               ))}
             </div>
-            <div className="text-center my-8">
+            <div className="text-center my-4 mt-10 ">
               <BentoHeading>Track interview feedback</BentoHeading>
               <BentoPara>
                 All the features of product feedback tool you need to easily
                 centralize product
               </BentoPara>
             </div>
+            <AnalyticCard className="absolute scale-140 rotate-12 -left-13 top-20 z-2" />
+            <AnalyticCard className="absolute scale-140 -rotate-18 -right-14 top-20 z-2" />
           </div>
         </div>
         <div className="flex lg:flex-row flex-col gap-5 ">
