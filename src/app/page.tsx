@@ -1,6 +1,6 @@
-import { HomePage } from "@/pages/home";
+import { HomePage } from "@/modules/home";
 import Image from "next/image";
 
 export default function Home() {
-  return <HomePage />
+  return <HomePage />;
 }
