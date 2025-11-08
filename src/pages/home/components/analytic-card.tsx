@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export const AnalyticCard = ({ className }: { className?: string }) => {
+const AnalyticCard = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
@@ -24,6 +24,8 @@ export const AnalyticCard = ({ className }: { className?: string }) => {
     </div>
   );
 };
+
+export default AnalyticCard;
 
 const meetings = [
   {

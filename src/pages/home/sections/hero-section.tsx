@@ -3,7 +3,7 @@ import { GreenBtn } from "@/components/green-btn";
 import { Logo } from "@/components/svgs/logo";
 import { LogoCard } from "@/components/logo-card";
 import { ArrowRightIcon } from "lucide-react";
-import { AnalyticCard } from "../components/analytic-card";
+import AnalyticCard from "../components/analytic-card";
 import { SocialCard } from "../components/social-media-card";
 import { InterviewCard } from "../components/interview-card";
 
