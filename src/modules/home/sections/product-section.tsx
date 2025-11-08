@@ -54,15 +54,20 @@ export const ProductSection = () => {
             <AnalyticCard className="absolute scale-140 -rotate-18 -right-14 top-20 z-2" />
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col gap-5 ">
-          <div className="rounded-3xl border border-neutral-200 w-3/5 h-[483px] flex flex-col">
-            <TimeTrackerCard />
-            <div className="text-center my-4 mt-22 ">
+        <div className="flex lg:flex-row flex-col gap-5">
+          <div className="relative rounded-2xl border border-neutral-200 w-3/5 h-[483px] flex flex-col justify-cente overflow-hidden">
+            <TimeTrackerCard className="mt-22" />
+            <div className="text-center my-3">
               <BentoHeading>Rank interviee, effortlessly</BentoHeading>
               <BentoPara className="w-[40%]">
                 State of the art bar chart depiction of interviee's performance
               </BentoPara>
             </div>
+            <div className="absolute w-80 gap-3 font-normal flex bg-white rounded-2xl border shadow-[0px_4px_8px_0px_#0000001a,0px_15px_15px_0px_#00000017,0px_34px_20px_0px_#0000000d,0px_60px_24px_0px_#00000003,0px_93px_26px_0px_#00000000] p-5 top-6 -right-19 z-5">
+              <span>✅</span>
+              <h2>Do not hire Sujal, please.</h2>
+            </div>
+            <div className="absolute w-80 gap-3 font-normal flex bg-white rounded-2xl border shadow-[0px_4px_8px_0px_#0000001a,0px_15px_15px_0px_#00000017,0px_34px_20px_0px_#0000000d,0px_60px_24px_0px_#00000003,0px_93px_26px_0px_#00000000] h-15 top-12.5 -right-23 z-4"></div>
           </div>
           <div className="rounded-3xl w-2/5 h-[483px] bg-[#EBEBEB] border-dashed border-neutral-300 border-4"></div>
         </div>

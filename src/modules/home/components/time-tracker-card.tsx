@@ -2,6 +2,7 @@ import InfoIcon from "@/components/svgs/info-icon";
 import SandClock from "@/components/svgs/sand-clock";
 import { Chartbar, ChartValue } from "./chart-bar";
 import { AverageBar } from "./average-bar";
+import { cn } from "@/lib/utils";
 
 interface ChartValue {
   fullValue: string;
@@ -44,15 +45,20 @@ const chartValue: ChartValue[] = [
 const time: string[] = ["0", "2h", "4h", "8h"];
 const days: string[] = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-export const TimeTrackerCard = () => {
+export const TimeTrackerCard = ({ className }: { className?: string }) => {
   return (
-    <div className="mx-auto bg-white border border-[#e7e8ec] rounded-3xl">
+    <div
+      className={cn(
+        "mx-auto bg-white border border-[#e7e8ec] rounded-3xl",
+        className
+      )}
+    >
       <div className="flex items-center gap-2 p-6 mx-12">
         <SandClock className="size-5" />
         <p>Time Tracker</p>
         <InfoIcon className="size-3.5" />
       </div>
-      <div className="flex items-end relative mx-15 mt-6">
+      <div className="flex items-end relative mx-15 mt-4">
         <div className="flex gap-3 items-end border-b border-[#ecebeb] py-2 mx-4">
           {chartValue.map((item, idx) => (
             <Chartbar
