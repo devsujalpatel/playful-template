@@ -9,14 +9,14 @@ interface ChartProps {
 export const Chartbar = ({
   fullValue = "4rem",
   children,
-  className,
+  className = "bg-[#D2F2E3]",
 }: ChartProps) => {
   return (
     <div>
       <div
         style={{ height: fullValue }}
         className={cn(
-          `flex items-end rounded-lg gap-2 ${fullValue} overflow-hidden w-10 bg-[#D2F2E3]`,
+          `flex items-end rounded-lg gap-2 ${fullValue} overflow-hidden w-10`,
           className
         )}
       >
@@ -31,11 +31,9 @@ interface ChartValueProps {
   className?: string;
 }
 
-export const ChartValue = ({ value = "2rem", className }: ChartValueProps) => {
-  return (
-    <div
-      style={{ height: value }}
-      className={cn(`w-full bg-[#1DBF73]`, className)}
-    />
-  );
+export const ChartValue = ({
+  value = "2rem",
+  className = "bg-[#1DBF73]",
+}: ChartValueProps) => {
+  return <div style={{ height: value }} className={cn(`w-full`, className)} />;
 };
