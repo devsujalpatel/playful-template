@@ -1,9 +1,9 @@
 function VerticalDots(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width={447}
+      width={310}
       height={2}
-      viewBox="0 0 447 2"
+      viewBox="0 0 310 2"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}

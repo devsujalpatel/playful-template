@@ -5,7 +5,7 @@ import { BentoPara } from "../components/bento-para";
 import { BentoHeading } from "../components/bento-heading";
 import { DriveCard } from "../components/drive-card";
 import { InterviewDetails } from "../components/interview-details";
-import AnalyticCard from "../components/analytic-card";
+import { AnalyticCard } from "../components/analytic-card";
 import { TimeTrackerCard } from "../components/time-tracker-card";
 
 export const ProductSection = () => {
@@ -43,7 +43,7 @@ export const ProductSection = () => {
                 />
               ))}
             </div>
-            <div className="text-center my-4 mt-10 ">
+            <div className="text-center my-4 mt-10">
               <BentoHeading>Track interview feedback</BentoHeading>
               <BentoPara>
                 All the features of product feedback tool you need to easily

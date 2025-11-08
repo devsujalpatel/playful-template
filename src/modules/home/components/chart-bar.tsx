@@ -16,7 +16,7 @@ export const Chartbar = ({
       <div
         style={{ height: fullValue }}
         className={cn(
-          `flex items-end rounded-lg gap-2 ${fullValue} overflow-hidden w-10`,
+          `flex items-end rounded-md gap-2 ${fullValue} overflow-hidden w-[2.2rem]`,
           className
         )}
       >
