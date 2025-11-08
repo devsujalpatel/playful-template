@@ -5,7 +5,7 @@ import { BentoPara } from "../components/bento-para";
 import { BentoHeading } from "../components/bento-heading";
 import { DriveCard } from "../components/drive-card";
 import { InterviewDetails } from "../components/interview-details";
-import { AnalyticCard } from "../components/analytic-card";
+import AnalyticCard from "../components/analytic-card";
 import { TimeTrackerCard } from "../components/time-tracker-card";
 
 export const ProductSection = () => {
