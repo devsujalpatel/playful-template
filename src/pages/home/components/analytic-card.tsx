@@ -35,7 +35,7 @@ const meetings = [
     label: "15:00 | Russia",
   },
   {
-    title: "Meeting with Manu",
+    title: "Have to go F** C**",
     label: "22:15 | Theka",
   },
 ];
