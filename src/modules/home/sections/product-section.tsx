@@ -7,6 +7,61 @@ import { DriveCard } from "../components/drive-card";
 import { InterviewDetails } from "../components/interview-details";
 import { AnalyticCard } from "../components/analytic-card";
 import { TimeTrackerCard } from "../components/time-tracker-card";
+import { SocialIconGroup } from "../components/social-icons-group";
+import { SocialCard } from "../components/social-media-card";
+
+interface Interview {
+  title: string;
+  label: string;
+  avatar?: string;
+}
+
+const interviews: Interview[] = [
+  {
+    title: "Sujal's Girlfriend",
+    label: "Doesn't exist, fake profile.",
+    avatar: "/assets/images/avatar1.webp",
+  },
+  {
+    title: "Gone Girl",
+    label: "Not a good idea to hire",
+    avatar: "/assets/images/avatar2.png",
+  },
+  {
+    title: "Aditya Raj",
+    label: "Instant hire.",
+    avatar: "/assets/images/avatar3.png",
+  },
+];
+
+interface Social {
+  name: string;
+  icon: string;
+  className: string;
+}
+
+const socials: Social[] = [
+  {
+    name: "Discord",
+    icon: "/assets/socials/discord.svg",
+    className: "-rotate-16",
+  },
+  {
+    name: "Facebook",
+    icon: "/assets/socials/insta.svg",
+    className: "z-2 -rotate-8",
+  },
+  {
+    name: "Linkedin",
+    icon: "/assets/socials/in.svg",
+    className: "-rotate-13 z-3",
+  },
+  {
+    name: "Facebook",
+    icon: "/assets/socials/fb.svg",
+    className: "rotate-16 z-4 -mr-10",
+  },
+];
 
 export const ProductSection = () => {
   return (
@@ -69,33 +124,17 @@ export const ProductSection = () => {
             </div>
             <div className="absolute w-80 gap-3 font-normal flex bg-white rounded-2xl border shadow-[0px_4px_8px_0px_#0000001a,0px_15px_15px_0px_#00000017,0px_34px_20px_0px_#0000000d,0px_60px_24px_0px_#00000003,0px_93px_26px_0px_#00000000] h-15 top-12.5 -right-23 z-4"></div>
           </div>
-          <div className="rounded-3xl w-2/5 h-[483px] bg-[#EBEBEB] border-dashed border-neutral-300 border-4"></div>
+          <div className="rounded-3xl w-2/5 h-[483px] flex items-center flex-col justify-around bg-[#EBEBEB] border-dashed border-neutral-300 border-4">
+            <SocialIconGroup className="ml-12" />
+            <div className="text-center my-2 mt-10">
+              <BentoHeading>Easy social media integration</BentoHeading>
+              <BentoPara>
+                Go from nothing to social media success stories.
+              </BentoPara>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
-interface Interview {
-  title: string;
-  label: string;
-  avatar?: string;
-}
-
-const interviews: Interview[] = [
-  {
-    title: "Sujal's Girlfriend",
-    label: "Doesn't exist, fake profile.",
-    avatar: "/assets/images/avatar1.webp",
-  },
-  {
-    title: "Gone Girl",
-    label: "Not a good idea to hire",
-    avatar: "/assets/images/avatar2.png",
-  },
-  {
-    title: "Aditya Raj",
-    label: "Instant hire.",
-    avatar: "/assets/images/avatar3.png",
-  },
-];
