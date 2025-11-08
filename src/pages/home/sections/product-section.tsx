@@ -6,6 +6,7 @@ import { BentoHeading } from "../components/bento-heading";
 import { DriveCard } from "../components/drive-card";
 import { InterviewDetails } from "../components/interview-details";
 import { AnalyticCard } from "../components/analytic-card";
+import { TimeTrackerCard } from "../components/time-tracker-card";
 
 export const ProductSection = () => {
   return (
@@ -54,7 +55,15 @@ export const ProductSection = () => {
           </div>
         </div>
         <div className="flex lg:flex-row flex-col gap-5 ">
-          <div className="rounded-3xl border border-neutral-200 w-3/5 h-[483px]"></div>
+          <div className="rounded-3xl border border-neutral-200 w-3/5 h-[483px] flex flex-col">
+            <TimeTrackerCard />
+            <div className="text-center my-4 mt-22 ">
+              <BentoHeading>Rank interviee, effortlessly</BentoHeading>
+              <BentoPara className="w-[40%]">
+                State of the art bar chart depiction of interviee's performance
+              </BentoPara>
+            </div>
+          </div>
           <div className="rounded-3xl w-2/5 h-[483px] bg-[#EBEBEB] border-dashed border-neutral-300 border-4"></div>
         </div>
       </div>
