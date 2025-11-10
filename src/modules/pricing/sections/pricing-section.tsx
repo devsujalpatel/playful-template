@@ -1,6 +1,7 @@
 import { HeaderButton } from "@/modules/components/header-button";
 import { SectionHeading } from "@/modules/components/section-heading";
 import { SectionPara } from "@/modules/components/section-paragraph";
+import { PricingCom } from "../components/pricing-component";
 
 export const PricingSection = () => {
   return (
@@ -12,7 +13,7 @@ export const PricingSection = () => {
           Pick from our plans and get started in minutes, simple for everyone.
         </SectionPara>
       </div>
-      <div></div>
+      <PricingCom />
     </div>
   );
 };

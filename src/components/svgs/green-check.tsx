@@ -13,24 +13,24 @@ function GreenCheckIcon(props: React.SVGProps<SVGSVGElement>) {
           fillRule="evenodd"
           clipRule="evenodd"
           d="M16.297 32.25c-8.7 0-15.75-7.054-15.75-15.75S7.597.75 16.297.75c8.696 0 15.75 7.054 15.75 15.75s-7.054 15.75-15.75 15.75z"
-          fill="#fff"
+          fill={props.stroke || "#00000000"}
         />
         <path
           fillRule="evenodd"
           clipRule="evenodd"
           d="M16.3 25.695a9.191 9.191 0 110-18.383 9.191 9.191 0 010 18.383z"
-          fill="#25a18e"
+          fill={props.fill || "#25A18E"}
         />
         <path
           d="M16.3 25.695a9.191 9.191 0 110-18.383 9.191 9.191 0 010 18.383z"
-          stroke="#25a18e"
+          stroke={props.fill || "#25A18E"}
           strokeWidth={1.96875}
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M20.383 14.462l-5.106 5.106-3.062-3.064"
-          stroke="#F2F1FF"
+          stroke={props.color || "#F2F1FF"}
           strokeWidth={1.96875}
           strokeLinecap="round"
           strokeLinejoin="round"
