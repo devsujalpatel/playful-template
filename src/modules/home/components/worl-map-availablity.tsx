@@ -7,28 +7,32 @@ export function WorldMapAvailable() {
       <WorldMap
         dots={[
           {
-            start: { lat: 64.2008, lng: -149.4937 },
-            end: { lat: -26.689, lng: -56.9211 },
+            start: { lat: 64.2008, lng: -149.4937 }, // canada
+            end: { lat: -26.689, lng: -56.9211 }, // south america
           },
           {
-            start: { lat: 64.2008, lng: -149.4937 },
-            end: { lat: 76, lng: -43 },
+            start: { lat: 64.2008, lng: -149.4937 }, // canada
+            end: { lat: 76, lng: -43 }, // greenland
           },
           {
             start: { lat: -26.689, lng: -56.9211 },
-            end: { lat: 0.7223, lng: 17 },
+            end: { lat: 0, lng: 17 }, // africa
           },
           {
-            start: { lat: 76, lng: -43 },
-            end: { lat: 0.7223, lng: 17 },
+            start: { lat: 76, lng: -43 }, // greenland
+            end: { lat: 0, lng: 17 }, // africa
           },
           {
-            start: { lat: 76, lng: -43 },
-            end: { lat: 28.6139, lng: 77.209 },
+            start: { lat: 70.6139, lng: 97.209 }, // greenland
+            end: { lat: 76, lng: -43 }, // russia
           },
           {
-            start: { lat: 28.6139, lng: 77.209 },
-            end: { lat: -1.2921, lng: 36.8219 },
+            start: { lat: 15, lng: 100 }, // china
+            end: { lat: 0, lng: 17 }, // africa
+          },
+          {
+            start: { lat: 0, lng: 17 }, // africa
+            end: { lat: 70.6139, lng: 97.209 }, // russia
           },
         ]}
       />
