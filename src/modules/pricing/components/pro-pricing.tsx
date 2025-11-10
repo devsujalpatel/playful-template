@@ -10,7 +10,7 @@ export const ProPricing = () => {
           $ <span className="text-7xl font-bold text-shadow-2xs">1490</span>{" "}
           /month
         </p>
-        <GreenBtn className="w-full py-2.5 rounded-xl text-lg">
+        <GreenBtn className="w-full text-lg py-2.5 rounded-xl">
           Get Pro
         </GreenBtn>
         <div className="flex flex-col gap-2">

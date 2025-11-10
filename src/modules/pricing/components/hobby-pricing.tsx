@@ -10,7 +10,7 @@ export const HobbyPricing = () => {
           $ <span className="text-7xl font-bold text-shadow-2xs">99</span>{" "}
           /month
         </p>
-        <GreenBtn className="w-full py-2.5 rounded-xl">Get Hobby</GreenBtn>
+        <GreenBtn className="w-full py-2.5 text-lg rounded-xl">Get Hobby</GreenBtn>
         <div className="flex flex-col gap-2">
           {planDetails.map((item, idx) => (
             <div key={idx} className="flex gap-1 items-start">

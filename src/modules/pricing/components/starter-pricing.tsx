@@ -6,16 +6,20 @@ export const StarterPricing = () => {
   return (
     <div className="flex flex-col p-6 lg:p-8 xl:p-16 border w-full h-[1050px] my-16 md:my-0 bg-brand text-white rounded-3xl shadow-[0px_10px_23px_0px_#0000001a,0px_41px_41px_0px_#00000017,0px_92px_55px_0px_#0000000d,0px_164px_66px_0px_#00000003,0px_257px_72px_0px_#00000000]">
       <div className="flex items-center justify-between">
-        <p>Starter</p>
-        <button>Featured</button>
+        <p className="font-semibold text-lg">Starter</p>
+        <button className="px-3 py-1 bg-white  text-black rounded-full shadow-2xl">
+          Featured
+        </button>
       </div>
-      <div>
+      <div className="flex flex-col gap-10 my-10">
         <p>
-          $ <span className="text-7xl font-bold text-shadow-2xs">1490</span>{" "}
+          $ <span className="text-7xl font-bold text-shadow-2xs">299</span>{" "}
           /month
         </p>
-        <GreenBtn>Get Pro</GreenBtn>
-        <div>
+        <button className="w-full text-black py-2.5 shadow-2xl text-shadow-accent font-normal text-lg rounded-xl bg-white">
+          Get Starter
+        </button>
+        <div className="flex flex-col gap-2">
           {planDetails.map((item, idx) => (
             <div key={idx} className="flex gap-1 items-center">
               <GreenCheckIcon
@@ -32,16 +36,18 @@ export const StarterPricing = () => {
               <span className="-mt-1">+</span>
             </div>
           </div>
-          {extraPlanDetails.map((item, idx) => (
-            <div key={idx} className="flex gap-1 items-center">
-              <GreenCheckIcon
-                fill={"#fff"}
-                color="#25A18E"
-                stroke={"#31A89A"}
-              />
-              <p>{item}</p>
-            </div>
-          ))}
+          <div className="flex flex-col gap-2">
+            {extraPlanDetails.map((item, idx) => (
+              <div key={idx} className="flex gap-1 items-center">
+                <GreenCheckIcon
+                  fill={"#fff"}
+                  color="#25A18E"
+                  stroke={"#31A89A"}
+                />
+                <p>{item}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
