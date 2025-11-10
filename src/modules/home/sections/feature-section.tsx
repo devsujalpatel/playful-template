@@ -3,9 +3,9 @@ import { Cloud } from "@/components/svgs/cloud";
 import { SpeedMeter } from "@/components/svgs/speed-meter";
 import { UserSearch } from "@/components/svgs/user-search";
 import Image from "next/image";
-import { HeaderButton } from "../components/header-button";
-import { SectionHeading } from "../components/section-heading";
-import { SectionPara } from "../components/section-paragraph";
+import { HeaderButton } from "@/modules/components/header-button";
+import { SectionHeading } from "@/modules/components/section-heading";
+import { SectionPara } from "@/modules/components/section-paragraph";
 
 export const FeatureSection = () => {
   return (

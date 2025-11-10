@@ -1,8 +1,7 @@
-import { CheckIcon } from "lucide-react";
-import { HeaderButton } from "../components/header-button";
-import { SectionHeading } from "../components/section-heading";
-import { SectionPara } from "../components/section-paragraph";
-import { WorldMapAvailable } from "../components/worl-map-availablity";
+import { HeaderButton } from "@/modules/components/header-button";
+import { SectionHeading } from "@/modules/components/section-heading";
+import { SectionPara } from "@/modules/components/section-paragraph";
+import { WorldMapAvailable } from "@/modules/components/worl-map-availablity";
 import GreenCheckIcon from "@/components/svgs/green-check";
 
 export const AvailablitySection = () => {
