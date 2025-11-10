@@ -1,7 +1,9 @@
+import { CheckIcon } from "lucide-react";
 import { HeaderButton } from "../components/header-button";
 import { SectionHeading } from "../components/section-heading";
 import { SectionPara } from "../components/section-paragraph";
 import { WorldMapAvailable } from "../components/worl-map-availablity";
+import GreenCheckIcon from "@/components/svgs/green-check";
 
 export const AvailablitySection = () => {
   return (
@@ -15,6 +17,28 @@ export const AvailablitySection = () => {
         </SectionPara>
       </div>
       <WorldMapAvailable />
+      <div className="flex flex-col items-center gap-4 my-10 space-y-10">
+        <div className="flex flex-col items-center gap-2">
+          <h2 className="text-4xl font-semibold text-brand">23000+</h2>
+          <p className="text-normal font-normal text-neutral-500">
+            Happy customers worldwide
+          </p>
+        </div>
+        <div className="flex items-center gap-20 justify-between">
+          {points.map((item, idx) => (
+            <div key={idx} className="flex items-center gap-1">
+              <GreenCheckIcon />
+              <p className="font-normal text-black">{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
+
+const points: string[] = [
+  "Interview candidates",
+  "Find proven leads",
+  "Filter, select, enjoy",
+];
