@@ -1,14 +1,13 @@
-import { HeaderButton } from "../components/header-button";
-import { SectionHeading } from "../components/section-heading";
-import { SectionPara } from "../components/section-paragraph";
-import { BentoPara } from "../components/bento-para";
-import { BentoHeading } from "../components/bento-heading";
-import { DriveCard } from "../components/drive-card";
-import { InterviewDetails } from "../components/interview-details";
-import { AnalyticCard } from "../components/analytic-card";
-import { TimeTrackerCard } from "../components/time-tracker-card";
-import { SocialIconGroup } from "../components/social-icons-group";
-import { SocialCard } from "../components/social-media-card";
+import { HeaderButton } from "@/modules/components/header-button";
+import { SectionHeading } from "@/modules/components/section-heading";
+import { SectionPara } from "@/modules/components/section-paragraph";
+import { BentoPara } from "@/modules/components/bento-para";
+import { BentoHeading } from "@/modules/components/bento-heading";
+import { DriveCard } from "@/modules/components/drive-card";
+import { InterviewDetails } from "@/modules/components/interview-details";
+import { AnalyticCard } from "@/modules/components/analytic-card";
+import { TimeTrackerCard } from "@/modules/components/time-tracker-card";
+import { SocialIconGroup } from "@/modules/components/social-icons-group";
 import { LogoCard } from "@/components/logo-card";
 
 interface Interview {

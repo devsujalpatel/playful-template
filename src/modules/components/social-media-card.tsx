@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import SocialMediaSvg from "../../../components/svgs/social-media";
+import SocialMediaSvg from "@/components/svgs/social-media";
 import Image from "next/image";
 import { SocialIconGroup } from "./social-icons-group";
 
