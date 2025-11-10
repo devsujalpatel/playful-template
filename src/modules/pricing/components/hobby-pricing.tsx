@@ -4,17 +4,18 @@ import GreenCheckIcon from "@/components/svgs/green-check";
 export const HobbyPricing = () => {
   return (
     <div className="flex flex-col h-[600px] md:h-[850px] p-6 lg:p-8 xl:p-16 border w-full bg-[#F5F5F5] rounded-3xl">
-      <p>Hobby</p>
-      <div>
+      <p className="text-neutral-800">Hobby</p>
+      <div className="flex flex-col gap-10 my-10">
         <p>
-          $ <span>99</span> /month
+          $ <span className="text-7xl font-bold text-shadow-2xs">99</span>{" "}
+          /month
         </p>
-        <GreenBtn>Get Hobby</GreenBtn>
-        <div>
+        <GreenBtn className="w-full py-2.5 rounded-xl">Get Hobby</GreenBtn>
+        <div className="flex flex-col gap-2">
           {planDetails.map((item, idx) => (
-            <div key={idx} className="flex gap-1 items-center">
+            <div key={idx} className="flex gap-1 items-start">
               <GreenCheckIcon fill={"#000"} />
-              <p>{item}</p>
+              <p className="mt-1">{item}</p>
             </div>
           ))}
         </div>

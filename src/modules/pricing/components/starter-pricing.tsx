@@ -4,11 +4,15 @@ import { PlusIcon } from "lucide-react";
 
 export const StarterPricing = () => {
   return (
-    <div className="flex flex-col p-6 lg:p-8 xl:p-16 border w-full h-[1050px] my-16 md:my-0 bg-brand text-white rounded-3xl">
-      <p>Starter</p>
+    <div className="flex flex-col p-6 lg:p-8 xl:p-16 border w-full h-[1050px] my-16 md:my-0 bg-brand text-white rounded-3xl shadow-[0px_10px_23px_0px_#0000001a,0px_41px_41px_0px_#00000017,0px_92px_55px_0px_#0000000d,0px_164px_66px_0px_#00000003,0px_257px_72px_0px_#00000000]">
+      <div className="flex items-center justify-between">
+        <p>Starter</p>
+        <button>Featured</button>
+      </div>
       <div>
         <p>
-          $ <span>1490</span> /month
+          $ <span className="text-7xl font-bold text-shadow-2xs">1490</span>{" "}
+          /month
         </p>
         <GreenBtn>Get Pro</GreenBtn>
         <div>

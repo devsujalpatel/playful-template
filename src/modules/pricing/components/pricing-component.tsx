@@ -5,7 +5,7 @@ import { ProPricing } from "./pro-pricing";
 
 export const PricingCom = () => {
   return (
-    <div className="flex gap-10 items-center w-7xl h-full">
+    <div className="flex gap-10 items-center h-full my-18">
       <HobbyPricing />
       <StarterPricing />
       <ProPricing />
