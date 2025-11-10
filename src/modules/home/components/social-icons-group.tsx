@@ -40,6 +40,7 @@ export const SocialIconGroup = ({ className }: { className?: string }) => {
     >
       {socials.map((item, idx) => (
         <Image
+          key={idx}
           width={200}
           height={200}
           loading="lazy"

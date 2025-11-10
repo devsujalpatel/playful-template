@@ -9,6 +9,7 @@ import { AnalyticCard } from "../components/analytic-card";
 import { TimeTrackerCard } from "../components/time-tracker-card";
 import { SocialIconGroup } from "../components/social-icons-group";
 import { SocialCard } from "../components/social-media-card";
+import { LogoCard } from "@/components/logo-card";
 
 interface Interview {
   title: string;
@@ -65,7 +66,7 @@ const socials: Social[] = [
 
 export const ProductSection = () => {
   return (
-    <div className="flex flex-col justify-between items-center my-25">
+    <div className="flex flex-col justify-between items-center my-25 relative">
       <div className="flex flex-col items-center space-y-4">
         <HeaderButton>Products</HeaderButton>
         <SectionHeading>
@@ -76,6 +77,7 @@ export const ProductSection = () => {
           evaluating, and onboarding top talent - all in one platform.
         </SectionPara>
       </div>
+      <LogoCard className="top-50 left-30 z-30 -rotate-16" />
       <div className="lg:w-10/12 space-y-5 mx-auto mt-24">
         <div className="flex lg:flex-row flex-col gap-5">
           <div className="relative rounded-3xl shadow-ace w-2/5 h-[483px] p-14 bg-white">
