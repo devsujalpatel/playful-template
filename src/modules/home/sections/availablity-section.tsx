@@ -1,6 +1,7 @@
 import { HeaderButton } from "../components/header-button";
 import { SectionHeading } from "../components/section-heading";
 import { SectionPara } from "../components/section-paragraph";
+import { WorldMapAvailable } from "../components/worl-map-availablity";
 
 export const AvailablitySection = () => {
   return (
@@ -13,7 +14,7 @@ export const AvailablitySection = () => {
           20,000+ representatives
         </SectionPara>
       </div>
-      <div></div>
+      <WorldMapAvailable />
     </div>
   );
 };
