@@ -14,7 +14,7 @@ export const TestimonialSection = () => {
           hiring process. Take a look at some of their feedbacks.
         </SectionPara>
       </div>
-      <div className="flex gap-6 lg:flex-row flex-col h-full lg:h-[1000px] w-7xl my-24">
+      <div className="flex gap-6 lg:flex-row flex-col h-full lg:h-[1000px] w-7xl my-30">
         <div className="space-y-6 w-full">
           <div className="border shadow-[0px_14px_30px_0px_#0000000D,0px_54px_54px_0px_#0000000A,0px_122px_73px_0px_#00000008,0px_217px_87px_0px_#00000003,0px_340px_95px_0px_#00000000] bg-white rounded-[35px] p-10 flex flex-col justify-between 2xl:h-2/3 h-[600px]">
             <p className="md:text-lg text-sm text-[#3C3C3C] md:leading-8 font-normal mb-8 max-h-36">

@@ -5,6 +5,7 @@ import { ProductSection } from "./sections/product-section";
 import { AvailablitySection } from "./sections/availablity-section";
 import { PricingSection } from "../home/sections/pricing-section";
 import { TestimonialSection } from "./sections/testimonial-section";
+import { FaqSection } from "./sections/faq-section";
 
 export const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ export const HomePage = () => {
       <AvailablitySection />
       <PricingSection />
       <TestimonialSection />
+      <FaqSection />
     </Container>
   );
 };
