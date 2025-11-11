@@ -16,7 +16,7 @@ export const TestimonialSection = () => {
       </div>
       <div className="flex gap-6 lg:flex-row flex-col h-full lg:h-[1000px] w-7xl my-24">
         <div className="space-y-6 w-full">
-          <div className="border shadow-[0px_14px_30px_0px_#0000000D,0px_54px_54px_0px_#0000000A,0px_122px_73px_0px_#00000008,0px_217px_87px_0px_#00000003,0px_340px_95px_0px_#00000000] bg-white rounded-[2.1rem] p-10 flex flex-col justify-between h-[650px]">
+          <div className="border shadow-[0px_14px_30px_0px_#0000000D,0px_54px_54px_0px_#0000000A,0px_122px_73px_0px_#00000008,0px_217px_87px_0px_#00000003,0px_340px_95px_0px_#00000000] bg-white rounded-[35px] p-10 flex flex-col justify-between 2xl:h-2/3 h-[600px]">
             <p className="md:text-lg text-sm text-[#3C3C3C] md:leading-8 font-normal mb-8 max-h-36">
               This platform is revolutionary. I hired my first candidate from
               Playful recruiting and they turned out to be great. Now since I'm
@@ -38,7 +38,7 @@ export const TestimonialSection = () => {
               </div>
             </div>
           </div>
-          <div className="border bg-[#F5F5F5] rounded-[2.1rem] h-[400px] p-10 flex flex-col justify-between">
+          <div className="border bg-[#F5F5F5] rounded-[35px] h-[400px] p-10 flex flex-col justify-between">
             <p className="md:text-lg text-sm text-[#3C3C3C] md:leading-8 font-normal mb-8 max-h-36">
               The team at Playful has been incredible to work with. Their
               attention to detail and commitment to quality is unmatched.
@@ -59,7 +59,7 @@ export const TestimonialSection = () => {
           </div>
         </div>
         <div className="space-y-6 w-full">
-          <div className="border bg-[#F5F5F5] rounded-[2.1rem] h-[400px] p-10 flex flex-col justify-between">
+          <div className="border bg-[#F5F5F5] rounded-[35px] h-[400px] p-10 flex flex-col justify-between">
             <p className="md:text-lg text-sm text-[#3C3C3C] md:leading-8 font-normal mb-8 max-h-36">
               Working with this platform has transformed our recruitment
               process. The AI-powered matching system saved us countless hours
@@ -79,7 +79,7 @@ export const TestimonialSection = () => {
               </div>
             </div>
           </div>
-          <div className="border bg-[#F5F5F5] rounded-[2.1rem] h-[650px] p-10 flex flex-col justify-between">
+          <div className="border bg-[#F5F5F5] rounded-[35px] 2xl:h-2/3 h-[600px] p-10 flex flex-col justify-between">
             <p className="md:text-lg text-sm text-[#3C3C3C] md:leading-8 font-normal mb-8 max-h-36">
               The level of customization and flexibility in the platform is
               outstanding. We've been able to adapt it perfectly to our unique
@@ -104,7 +104,7 @@ export const TestimonialSection = () => {
           </div>
         </div>
         <div className="space-y-6 w-full">
-          <div className="border bg-[#F5F5F5] rounded-[2.1rem] h-[400px] p-10 flex flex-col justify-between">
+          <div className="border bg-[#F5F5F5] rounded-[35px] h-[400px] p-10 flex flex-col justify-between">
             <p className="md:text-lg text-sm text-[#3C3C3C] md:leading-8 font-normal mb-8 max-h-36">
               The platform's intuitive interface and powerful analytics have
               completely revolutionized how we approach talent acquisition.
@@ -123,7 +123,9 @@ export const TestimonialSection = () => {
               </div>
             </div>
           </div>
-          {/* <div className=" border bg-[url('/assets/images/video_banner.png')] rounded-[2.1rem]"></div> */}
+          <div className="flex 2xl:h-2/3 h-[600px] gap-4 justify-center items-end w-full rounded-[35px] bg-[url('/assets/images/video_banner.png')] bg-cover p-10 bg-[#F5F5F5]">
+            <button className="cursor-pointer py-3 px-8 bg-white/50 border-2 border-white text-white rounded-xl text-lg font-semibold">Watch Review</button>
+          </div>
         </div>
       </div>
     </div>
