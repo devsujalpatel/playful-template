@@ -1,34 +1,27 @@
-import { LogoCard } from "@/components/logo-card";
-import Image from "next/image";
+import { BookCall } from "@/modules/components/book-call";
+import { FeatureCard } from "@/modules/components/feature-card";
+import { GreenTickPoints } from "@/modules/components/green-tick-points";
 import { HeaderButton } from "@/modules/components/header-button";
 import { SectionHeading } from "@/modules/components/section-heading";
 import { SectionPara } from "@/modules/components/section-paragraph";
-import { FeatureCard } from "@/modules/components/feature-card";
 
 export const FeatureSection = () => {
   return (
     <div className="flex flex-col justify-between items-center my-2 mt-24">
-      <div className="flex flex-col items-center space-y-4">
+      <FeatureCard />
+      <div className="flex flex-col items-center space-y-4 my-10 mt-52">
         <HeaderButton>Features</HeaderButton>
         <SectionHeading>Go from question to hired</SectionHeading>
-        <SectionPara>
+        <SectionPara className="w-[55%]">
           All the features you need to evaluate technical candidates
           effectively, track hiring pipelines, and find your next star engineer
           - all in one place.
         </SectionPara>
       </div>
-     <FeatureCard />
-      <div className="flex justify-center relative items-center mt-28 w-[93%] bg-linear-to-b from-brand p-24 rounded-4xl">
-        <Image
-          src="/assets/images/landing.webp"
-          alt="landing"
-          width={1500}
-          height={1000}
-        />
-        <LogoCard className="md:-left-10 top-0 md:top-24 rotate-[-15.11deg]" />
-        <LogoCard className="md:-right-5 bottom-20 md:top-120 rotate-[15.11deg]" />
+      <div className="flex flex-col items-center gap-4 my-15 space-y-20 mb-20">
+        <GreenTickPoints />
+        <BookCall />
       </div>
     </div>
   );
 };
-

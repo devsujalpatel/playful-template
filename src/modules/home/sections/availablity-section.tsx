@@ -3,6 +3,7 @@ import { SectionHeading } from "@/modules/components/section-heading";
 import { SectionPara } from "@/modules/components/section-paragraph";
 import { WorldMapAvailable } from "@/modules/components/worl-map-availablity";
 import GreenCheckIcon from "@/components/svgs/green-check";
+import { GreenTickPoints } from "@/modules/components/green-tick-points";
 
 export const AvailablitySection = () => {
   return (
@@ -23,21 +24,8 @@ export const AvailablitySection = () => {
             Happy customers worldwide
           </p>
         </div>
-        <div className="flex items-center gap-20 justify-between">
-          {points.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-1">
-              <GreenCheckIcon />
-              <p className="font-normal text-black">{item}</p>
-            </div>
-          ))}
-        </div>
+        <GreenTickPoints />
       </div>
     </div>
   );
 };
-
-const points: string[] = [
-  "Interview candidates",
-  "Find proven leads",
-  "Filter, select, enjoy",
-];
