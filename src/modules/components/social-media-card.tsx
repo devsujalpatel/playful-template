@@ -18,9 +18,9 @@ export const SocialCard = ({ className }: { className?: string }) => {
       )}
     >
       <div className="relative">
-        <div className="absolute flex flex-col top-18 left-20 p-4">
+        <div className="absolute flex flex-col top-15 left-15 p-4">
           <p>Social Media Integration</p>
-          <SocialIconGroup />
+          <SocialIconGroup className="absolute left-12" />
         </div>
         <SocialMediaSvg />
       </div>

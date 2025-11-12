@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
-
+import { Footer } from "@/components/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,8 +26,9 @@ export default function RootLayout({
         className={` ${inter.variable} antialiased font-inter bg-neutral-50`}
       >
         <ThemeProvider>
-        <Navbar />
-        {children}
+          <Navbar />
+          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
