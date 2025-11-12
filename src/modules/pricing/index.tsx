@@ -4,9 +4,9 @@ import { FeatureSection } from "./sections/feature-section";
 
 export const PricingPage = () => {
   return (
-    <Container className="bg-neutral-50">
+    <>
       <PricingSection />
       <FeatureSection />
-    </Container>
+    </>
   );
 };

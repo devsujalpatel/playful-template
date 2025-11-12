@@ -9,7 +9,7 @@ import { FaqSection } from "./sections/faq-section";
 
 export const HomePage = () => {
   return (
-    <Container className="bg-neutral-50">
+    <>
       <HeroSection />
       <FeatureSection />
       <ProductSection />
@@ -17,6 +17,6 @@ export const HomePage = () => {
       <PricingSection />
       <TestimonialSection />
       <FaqSection />
-    </Container>
+    </>
   );
 };
