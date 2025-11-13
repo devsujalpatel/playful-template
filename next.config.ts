@@ -3,7 +3,7 @@ const withMDX = require("@next/mdx")();
 
 const nextConfig: NextConfig = {
   /* config options here */
-  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  pageExtensions: ["mdx", "ts", "tsx"],
 };
 
 module.exports = withMDX(nextConfig);

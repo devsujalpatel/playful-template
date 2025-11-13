@@ -1,4 +1,4 @@
-import { BlogPage } from "@/modules/blogs";
+import BlogPage from "@/modules/blogs";
 
 const Blog = () => {
   return <BlogPage />;
