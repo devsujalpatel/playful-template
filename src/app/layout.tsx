@@ -12,8 +12,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Playful | Sujal Patel",
-  description: "Project template by Sujal Patel",
+  title: "Playful template | Sujal Patel",
+  description:
+    "This website is created for learning purpose copied the design from aceternity",
+  openGraph: {
+    title: "Playful template",
+    description:
+      "This website is created for learning purpose copied the design from aceternity",
+    url: "https://playful.ringui.tech",
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
