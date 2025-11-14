@@ -1,10 +1,26 @@
-import { GreenBtn } from "@/components/green-btn";
+"use client";
 import GreenCheckIcon from "@/components/svgs/green-check";
-import { PlusIcon } from "lucide-react";
+import { Logo } from "@/components/svgs/logo";
+import { motion } from "motion/react";
 
 export const StarterPricing = () => {
   return (
-    <div className="flex flex-col p-6 lg:p-8 xl:p-16 border w-full h-[1050px] my-16 md:my-0 bg-brand text-white rounded-3xl shadow-[0px_10px_23px_0px_#0000001a,0px_41px_41px_0px_#00000017,0px_92px_55px_0px_#0000000d,0px_164px_66px_0px_#00000003,0px_257px_72px_0px_#00000000]">
+    <div className="flex relative flex-col p-6 lg:p-8 xl:p-16 border w-full h-[1050px] my-16 md:my-0 bg-brand text-white rounded-3xl shadow-[0px_10px_23px_0px_#0000001a,0px_41px_41px_0px_#00000017,0px_92px_55px_0px_#0000000d,0px_164px_66px_0px_#00000003,0px_257px_72px_0px_#00000000]">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        transition={{
+          duration: 0.5,
+        }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{
+          once: true,
+        }}
+        className="absolute -top-20 -right-7 -rotate-12"
+      >
+        <div className="size-16 md:size-20 lg:size-28 z-10 border flex justify-center items-center bg-linear-to-br from-white via-neutral-100 to-neutral-200 rounded-xl lg:rounded-3xl  border-[#f3f3f3] shadow-[0px_5px_11px_0px_rgba(0,0,0,0.1),0px_20px_20px_0px_rgba(0,0,0,0.09),0px_44px_27px_0px_rgba(0,0,0,0.05),0px_79px_32px_0px_rgba(0,0,0,0.01),0px_123px_35px_0px_rgba(0,0,0,0)]">
+          <Logo className="w-19 h-19" />
+        </div>
+      </motion.div>
       <div className="flex items-center justify-between">
         <p className="font-semibold text-lg">Starter</p>
         <button className="px-3 py-1 bg-white  text-black rounded-full shadow-2xl">

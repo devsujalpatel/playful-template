@@ -22,10 +22,6 @@ const navlinks: Navlink[] = [
     name: "Pricing",
     href: "/pricing",
   },
-  {
-    name: "Blog",
-    href: "/blog",
-  },
 ];
 
 export const Navbar = () => {
