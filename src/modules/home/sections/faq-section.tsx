@@ -1,7 +1,8 @@
+"use client";
 import { LogoCard } from "@/components/logo-card";
 import { AccordionCard } from "@/modules/components/accordion-card";
 import { BookCall } from "@/modules/components/book-call";
-import Image from "next/image";
+import { motion } from "motion/react";
 
 export const FaqSection = () => {
   return (
@@ -16,7 +17,13 @@ export const FaqSection = () => {
       <div className="flex gap-8 my-30 flex-col items-center">
         <div className="flex items-center justify-center -space-x-3">
           {Array.from({ length: 6 }).map((_, idx) => (
-            <Image
+            <motion.img
+              initial={{ opacity: 0, rotate: -1, scale: 1.1 }}
+              transition={{
+                duration: 0.5,
+                delay: idx * 0.06,
+              }}
+              whileInView={{ opacity: 1, rotate: 0, scale: 1 }}
               src={`/assets/images/avatar${idx + 1}.png`}
               key={idx}
               width={70}

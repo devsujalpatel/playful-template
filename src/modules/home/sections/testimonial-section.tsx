@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import { HeaderButton } from "@/modules/components/header-button";
 import { SectionHeading } from "@/modules/components/section-heading";
 import { SectionPara } from "@/modules/components/section-paragraph";
@@ -123,9 +125,18 @@ export const TestimonialSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex 2xl:h-2/3 h-[600px] gap-4 justify-center items-end w-full rounded-[35px] bg-[url('/assets/images/video_banner.png')] bg-cover p-10 bg-[#F5F5F5]">
-            <button className="cursor-pointer py-3 px-8 bg-white/50 border-2 border-white text-white rounded-xl text-lg font-semibold">Watch Review</button>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            transition={{
+              duration: 0.5,
+            }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="flex 2xl:h-2/3 h-[600px] gap-4 justify-center items-end w-full rounded-[35px] bg-[url('/assets/images/video_banner.png')] bg-cover p-10 bg-[#F5F5F5]"
+          >
+            <button className="cursor-pointer py-3 px-8 bg-white/50 border-2 border-white text-white rounded-xl text-lg font-semibold">
+              Watch Review
+            </button>
+          </motion.div>
         </div>
       </div>
     </div>
