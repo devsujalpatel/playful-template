@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Footer } from "@/components/footer";
 import { Container } from "@/components/container";
+import { LearningPurpose } from "@/components/learning-purpose";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -48,6 +49,7 @@ export default function RootLayout({
         className={` ${inter.variable} antialiased font-inter bg-neutral-50`}
       >
         <ThemeProvider>
+          <LearningPurpose />
           <Navbar />
           <Container className="bg-neutral-50">{children}</Container>
           <Footer />
