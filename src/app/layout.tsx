@@ -22,11 +22,18 @@ export const metadata: Metadata = {
     url: "https://playful.ringui.tech",
     images: [
       {
-        url: "/preview.png",
+        url: "https://playful.ringui.tech/preview.png",
         width: 1200,
         height: 630,
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Playful template",
+    description:
+      "This website is created for learning purpose copied the design from aceternity",
+    images: ["https://playful.ringui.tech/preview.png"],
   },
 };
 
